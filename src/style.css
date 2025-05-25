@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@600&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    color: #f0f0f0;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(bg.jpg);
+    background-size: cover;
+    background-position: 20% center;
+    height: 100vh;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* nav */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.05rem;
+}
+
+button {
+    color: #f0f0f0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 28px 20px;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+nav > *:hover {
+    color: #D4A373;
+}
+
+/* homepage */
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeHeader {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.namu {
+    font-family: sans-serif; 
+    color: #D4A373;
+    padding-top: 220px;
+    line-height: 0.2;
+    font-weight: 800;
+    font-size: 8rem;
+}
+
+.cafe {
+    font-size: 7rem;
+}
+
+.homePara {
+    display: flex;
+    justify-content: center;
+}
+
+.viewMenuBtn {
+    width: 7%;
+    margin-top: 40px;
+    padding: 12px 7px;
+    font-size: 1.1rem;
+    background-color: #D4A373;
+    color: black;
+}
+
+.viewMenuBtn:hover {
+    color: white;
+}
+
+/* menu */
+
+.menuDiv {
+    background-color: #f0f0f0;
+    border-top: 2px solid #C19A6B;
+    border-bottom: 2px solid #C19A6B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 54px;
+    justify-content: space-between;
+    height: 83vh;
+    width: 40%;
+}
+
+.menu > * {
+    color: rgb(31, 31, 31);
+}
+
+.menuHeader {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: 1.1;
+}
+
+.menu > h3 {
+    color: #C19A6B;
+}
+
+.menu > hr {
+    width: 50%;
+    height: 3px;
+    background-color: #C19A6B;
+    color: #C19A6B;
+    border: none;
+}
+
+.menu > hr.menuHr {
+    height: 5px;
+}
+
+.menu > p {
+    text-align: center;
+}
