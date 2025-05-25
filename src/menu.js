@@ -2,20 +2,20 @@ export {displayMenu};
 
 function displayMenu() {
     let contentDiv = document.getElementById("content");
-    let menuDiv = document.createElement("div");
-    let menu = document.createElement("div");
-    let menuHeader = document.createElement("h1");
-    let menuHr = document.createElement("hr");
+    let sectionWrapper = document.createElement("div");
+    let sectionDiv = document.createElement("div");
+    let sectionHeader = document.createElement("h1");
+    let sectionHr = document.createElement("hr");
 
-    menuDiv.className = "menuDiv";
-    menu.className = "menu";
-    menuHeader.className = "menuHeader";
-    menuHr.className = "menuHr";
+    sectionWrapper.className = "sectionWrapper";
+    sectionDiv.className = "sectionDiv";
+    sectionHeader.className = "sectionHeader";
+    sectionHr.className = "sectionHr";
 
-    menuHeader.textContent = "MENU";
-
-    menu.appendChild(menuHeader);
-    menu.appendChild(menuHr);
+    sectionHeader.textContent = "MENU";
+    
+    sectionDiv.appendChild(sectionHeader);
+    sectionDiv.appendChild(sectionHr);
 
     const menuItems = [
         {
@@ -46,14 +46,14 @@ function displayMenu() {
         priceElement.textContent = item.price;
 
         const hrElement = document.createElement("hr");
-        hrElement.className = "menuHr";
+        hrElement.className = "sectionHr";
 
-        menu.appendChild(nameElement);
-        menu.appendChild(descElement);
-        menu.appendChild(priceElement);
-        menu.appendChild(hrElement);
+        sectionDiv.appendChild(nameElement);
+        sectionDiv.appendChild(descElement);
+        sectionDiv.appendChild(priceElement);
+        sectionDiv.appendChild(hrElement);
     });
 
-    menuDiv.appendChild(menu);
-    contentDiv.appendChild(menuDiv);
+    sectionWrapper.appendChild(sectionDiv);
+    contentDiv.appendChild(sectionWrapper);
 }

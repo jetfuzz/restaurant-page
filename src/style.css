@@ -128,9 +128,9 @@ nav > *:hover {
     color: white;
 }
 
-/* menu */
+/* menu and about */
 
-.menuDiv {
+.sectionWrapper {
     background-color: #f0f0f0;
     border-top: 2px solid #C19A6B;
     border-bottom: 2px solid #C19A6B;
@@ -139,7 +139,14 @@ nav > *:hover {
     align-items: center;
 }
 
-.menu {
+.sectionHeader {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: 1.1;
+    color: rgb(31, 31, 31);
+}
+
+.sectionDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,21 +157,15 @@ nav > *:hover {
     width: 40%;
 }
 
-.menu > * {
+.sectionDiv > * {
     color: rgb(31, 31, 31);
 }
 
-.menuHeader {
-    font-size: 3.8rem;
-    font-weight: 700;
-    letter-spacing: 1.1;
-}
-
-.menu > h3 {
+.sectionDiv > h3 {
     color: #C19A6B;
 }
 
-.menu > hr {
+.sectionDiv > hr {
     width: 50%;
     height: 3px;
     background-color: #C19A6B;
@@ -172,10 +173,16 @@ nav > *:hover {
     border: none;
 }
 
-.menu > hr.menuHr {
+.sectionDiv > hr.sectionHr {
     height: 5px;
 }
 
-.menu > p {
+.sectionDiv > p {
     text-align: center;
+}
+
+/* about */
+
+#aboutDiv {
+    padding-bottom: 465px;
 }
